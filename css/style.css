@@ -9,7 +9,11 @@
 
 body {
     background: #151518;
+    padding: 0 10vw;
 }
 
-
+a {
+    text-decoration: none;
+    color: #eee;
+}
 
