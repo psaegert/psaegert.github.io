@@ -1,19 +1,31 @@
+:root {
+    --bg-color: #151518;
+    --text-color: #eee;
+    --text-color-opaque: rgba(238, 238, 238, 0.3);
+    --font-family: 'Montserrat';
+}
+
+
+/* Import the font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    color: #eee;
+    font-family: var(--font-family);
+    color: var(--text-color);
     background-clip: padding-box;
 }
 
 body {
-    background: #151518;
+    background: var(--bg-color);
     padding: 0 10vw;
 }
 
 a {
     text-decoration: none;
-    color: #eee;
+    color: var(--text-color);
 }
 
