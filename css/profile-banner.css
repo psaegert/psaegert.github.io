@@ -1,0 +1,39 @@
+.profile-banner {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+
+.profile-banner .profile-picture-big {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.profile-banner .credentials {
+    padding-left: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.credentials .name {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.credentials .name .academic-title {
+    opacity: 30%;
+    font-size: 2.0rem;
+    font-weight: 400;
+}
+
+.credentials .username {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    width: 100%;
+}
