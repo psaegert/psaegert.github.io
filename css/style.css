@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap');
+
+
 :root {
     --light-color: #eee;
     --dark-color: #151518;
@@ -5,11 +8,14 @@
     --light-secondary-color: hsl(240, 17%, 92.2%);
     --dark-secondary-color: #1f1f24;
 
-    --light-secondary-color-opaque: hsla(240, 11%, 90%, 0.93);
+    --light-secondary-color-opaque: hsla(240, 11%, 91%, 0.93);
     --dark-secondary-color-opaque: rgba(31, 31, 36, 0.93);
 
     --light-text-color: #151518;
     --dark-text-color: #eee;
+
+    --light-text-color-gray: #666;
+    --dark-text-color-gray: #999;
 
     --light-text-color-opaque:rgba(21, 21, 24, 0.4);
     --dark-text-color-opaque: rgba(238, 238, 238, 0.3);
@@ -21,10 +27,6 @@
 }
 
 
-/* Import the font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap');
-
-
 * {
     margin: 0;
     padding: 0;
@@ -33,31 +35,36 @@
     background-clip: padding-box;
 }
 
-.dark-reader {
-    background: var(--dark-color);
-    color: var(--dark-text-color);
-}
+
+/* Body */
 
 body {
     padding: 0 10vw;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     position: absolute;
     z-index: 0;
     color: var(--light-text-color);
     background: var(--light-color);
 }
 
+
+body.dark-reader {
+    background: var(--dark-color);
+    color: var(--dark-text-color);
+}
+
+@media screen and (prefers-color-scheme: dark) { 
+    body {
+        background: var(--dark-color) !important;
+        color: var(--dark-text-color) !important;
+    }
+}
+
+
+/* Links */
+
 a {
     text-decoration: none;
     color: inherit;
 }
-
-/* @media screen {
-    @media (prefers-color-scheme: dark) { 
-        body {
-            background: var(--dark-color);
-            color: var(--dark-text-color);
-        }
-    }
-} */

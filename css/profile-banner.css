@@ -5,7 +5,7 @@
     margin-top: 8vh;
 }
 
-.profile-banner .profile-picture-big {
+.profile-picture-big {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -35,6 +35,12 @@
     color: var(--dark-text-color-opaque);
 }
 
+@media screen and (prefers-color-scheme: dark) {
+    .credentials .name .academic-title {
+        color: var(--dark-text-color-opaque);
+    }
+}
+
 .credentials .username {
     font-size: 1.5rem;
     font-weight: 400;
@@ -51,6 +57,12 @@
 
 .dark-reader #profile-hr {
     color: var(--dark-text-color-opaque);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    #profile-hr {
+        color: var(--dark-text-color-opaque);
+    }
 }
 
 #profile-hr::after {
@@ -78,6 +90,20 @@
     width: 25px;
     height: 25px;
 }
+
+
+.dark-reader .invertable-icon {
+    filter: invert(100%);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    .invertable-icon {
+        filter: invert(100%);
+    }
+}
+
+
+/* Portrait mode */
 
 @media screen and (max-width: 808px) {    
     .profile-banner .profile-picture-big {
