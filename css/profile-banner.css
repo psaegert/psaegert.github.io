@@ -13,8 +13,8 @@
 }
 
 .profile-banner .credentials {
-    padding-left: 40px;
     display: inline-block;
+    padding-left: 40px;
     vertical-align: middle;
 }
 
@@ -26,7 +26,6 @@
 }
 
 .credentials .name .academic-title {
-    /* opacity: 30%; */
     color: var(--text-color-opaque);
     font-size: 2.0rem;
     font-weight: 400;
@@ -73,4 +72,70 @@
 .social-icon {
     width: 25px;
     height: 25px;
+}
+
+@media screen and (max-width: 808px) {    
+    .profile-banner .profile-picture-big {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .profile-banner .credentials {
+        display: block;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+    
+    .credentials .name {
+        font-size: 2.0rem;
+        padding-left: 6px;
+    }
+    
+    .credentials .name .academic-title {
+        color: var(--text-color-opaque);
+        font-size: 1.6rem;
+    }
+    
+    .credentials .username {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    #profile-hr {
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 300px;
+        /* border-bottom: 1px solid rgba(238, 238, 238, 0.2); */
+        color: var(--text-color-opaque);
+    }
+    
+    #profile-hr::after {
+        content: "/social";
+        display: inline-block;
+        position: absolute;
+        margin-top: 10px;
+        margin-left: -2px;
+        font-family: consolas;
+    }
+    
+    .social {
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        
+        /* border-top: 1px solid rgba(238, 238, 238, 0.2); */
+    }
+    
+    .social a {
+        margin: 0 17px;
+    }
+    
+    .social-icon {
+        width: 32px;
+        height: 32px;
+    }
 }

@@ -22,6 +22,9 @@
     margin: 50px 0 0 0;
     padding: 13px;
     width: 100%;
+    /* Workaround for reducing the width of the container to the width of the lined up tiles. */
+    /* width: max-content;
+    max-width: 100%; */
     height: 100%;
     border-radius: 48px;
     box-shadow: 0px 0px 140px 10px rgba(156, 156, 252, 0.07);
@@ -96,4 +99,12 @@
 .project-selection-description {
     margin-top: 15px;
     line-height: 1.4;
+}
+
+@media screen and (max-width: 808px) {
+    .projects-selection-container .project-tile-container {
+        width: 100%;
+        height: 300px;
+        padding: 20px;
+    }
 }
