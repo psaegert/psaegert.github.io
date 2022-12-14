@@ -10,7 +10,7 @@
     --light-secondary-color: hsl(240, 17%, 92.2%);
     --dark-secondary-color: #1f1f24;
 
-    --light-secondary-color-opaque: hsla(240, 11%, 91%, 0.93);
+    --light-secondary-color-opaque: hsla(0, 0%, 93.3%, 0.96);
     --dark-secondary-color-opaque: rgba(31, 31, 36, 0.93);
 
     --light-text-color: #151518;
@@ -52,14 +52,14 @@ body {
 
 
 body.dark-reader {
-    background: var(--dark-color) !important;
-    color: var(--dark-text-color) !important;
+    background: var(--dark-color);
+    color: var(--dark-text-color);
 }
 
 @media screen and (prefers-color-scheme: dark) { 
     body {
-        background: var(--dark-color) !important;
-        color: var(--dark-text-color) !important;
+        background: var(--dark-color);
+        color: var(--dark-text-color);
     }
 }
 
