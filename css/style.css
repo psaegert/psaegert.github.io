@@ -1,7 +1,22 @@
 :root {
-    --bg-color: #151518;
-    --text-color: #eee;
-    --text-color-opaque: rgba(238, 238, 238, 0.3);
+    --light-color: #eee;
+    --dark-color: #151518;
+
+    --light-secondary-color: hsl(240, 17%, 92.2%);
+    --dark-secondary-color: #1f1f24;
+
+    --light-secondary-color-opaque: rgba(232, 232, 238, 0.875);
+    --dark-secondary-color-opaque: rgba(31, 31, 36, 0.8);
+
+    --light-text-color: #151518;
+    --dark-text-color: #eee;
+
+    --light-text-color-opaque:rgba(21, 21, 24, 0.4);
+    --dark-text-color-opaque: rgba(238, 238, 238, 0.3);
+
+    --light-box-shadow: 0px 0px 140px 10px rgba(156, 156, 252, 0.15);
+    --dark-box-shadow: 0px 0px 140px 10px rgba(156, 156, 252, 0.07);
+
     --font-family: 'Montserrat';
 }
 
@@ -15,20 +30,34 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family);
-    color: var(--text-color);
     background-clip: padding-box;
 }
 
+.dark-reader {
+    background: var(--dark-color);
+    color: var(--dark-text-color);
+}
+
 body {
-    background: var(--bg-color);
     padding: 0 10vw;
     width: 100vw;
     height: 100vh;
     position: absolute;
+    z-index: 0;
+    color: var(--light-text-color);
+    background: var(--light-color);
 }
 
 a {
     text-decoration: none;
-    color: var(--text-color);
+    color: inherit;
 }
 
+/* @media screen {
+    @media (prefers-color-scheme: dark) { 
+        body {
+            background: var(--dark-color);
+            color: var(--dark-text-color);
+        }
+    }
+} */

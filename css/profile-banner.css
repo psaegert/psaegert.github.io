@@ -26,9 +26,13 @@
 }
 
 .credentials .name .academic-title {
-    color: var(--text-color-opaque);
+    color: var(--light-text-color-opaque);
     font-size: 2.0rem;
     font-weight: 400;
+}
+
+.dark-reader .credentials .name .academic-title {
+    color: var(--dark-text-color-opaque);
 }
 
 .credentials .username {
@@ -42,8 +46,11 @@
     margin: 0 auto;
     margin-top: 50px;
     width: 400px;
-    /* border-bottom: 1px solid rgba(238, 238, 238, 0.2); */
-    color: var(--text-color-opaque);
+    color: var(--light-text-color-opaque);
+}
+
+.dark-reader #profile-hr {
+    color: var(--dark-text-color-opaque);
 }
 
 #profile-hr::after {
@@ -61,8 +68,6 @@
     width: 100px;
     display: flex;
     justify-content: center;
-    
-    /* border-top: 1px solid rgba(238, 238, 238, 0.2); */
 }
 
 .social a {
@@ -94,7 +99,6 @@
     }
     
     .credentials .name .academic-title {
-        color: var(--text-color-opaque);
         font-size: 1.6rem;
     }
     
@@ -104,36 +108,9 @@
     }
     
     #profile-hr {
-        margin: 0 auto;
-        margin-top: 50px;
         width: 300px;
-        /* border-bottom: 1px solid rgba(238, 238, 238, 0.2); */
-        color: var(--text-color-opaque);
     }
-    
-    #profile-hr::after {
-        content: "/social";
-        display: inline-block;
-        position: absolute;
-        margin-top: 10px;
-        margin-left: -2px;
-        font-family: consolas;
-    }
-    
-    .social {
-        margin: 0 auto;
-        margin-top: 40px;
-        width: 100px;
-        display: flex;
-        justify-content: center;
-        
-        /* border-top: 1px solid rgba(238, 238, 238, 0.2); */
-    }
-    
-    .social a {
-        margin: 0 17px;
-    }
-    
+                
     .social-icon {
         width: 32px;
         height: 32px;

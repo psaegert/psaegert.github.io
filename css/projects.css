@@ -6,7 +6,6 @@
 
 .projects-selection .projects-selection-title {
     font-family: consolas;
-    background-color: #151518;
     font-size: 2rem;
     padding-left: 20px;
 }
@@ -22,13 +21,13 @@
     margin: 50px 0 0 0;
     padding: 13px;
     width: 100%;
-    /* Workaround for reducing the width of the container to the width of the lined up tiles. */
-    /* width: max-content;
-    max-width: 100%; */
     height: 100%;
     border-radius: 48px;
-    box-shadow: 0px 0px 140px 10px rgba(156, 156, 252, 0.07);
-    /* box-shadow: 0px 0px 140px 10px rgba(255, 255, 255, 0.02); */
+    box-shadow: var(--light-box-shadow);
+}
+
+.dark-reader .projects-selection .projects-selection-container {
+    box-shadow: var(--dark-box-shadow);
 }
 
 .projects-selection-container .project-tile-container {
@@ -42,9 +41,15 @@
     width: 100%;
     height: 100%;
     border-radius: 25px;
-    background: rgba(33, 33, 38, 0.851);
+    background: var(--light-secondary-color-opaque);
+    border: 1px solid var(--light-color);
     position: relative;
     overflow: hidden;
+}
+
+.dark-reader .projects-selection-container .project-tile-container .project-tile {
+    background: var(--dark-secondary-color-opaque);
+    border: 1px solid var(--dark-color);
 }
 
 .projects-selection-container .project-tile-container img.project-tile-image {
@@ -61,8 +66,12 @@
     background-color: #fff;
 
     /* Darken the image. */
-    filter: brightness(0.2);
+    filter: brightness(0.9);
     transition: transform 0.1s ease-in-out;
+}
+
+.dark-reader .projects-selection-container .project-tile-container img.project-tile-image {
+    filter: brightness(0.3);
 }
 
 /* When hovering over the tile container, slightly zoom into the image. */
