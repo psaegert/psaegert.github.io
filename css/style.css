@@ -2,6 +2,8 @@
 
 
 :root {
+    color-scheme: light dark;
+    
     --light-color: #eee;
     --dark-color: #151518;
 
