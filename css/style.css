@@ -5,8 +5,8 @@
     --light-secondary-color: hsl(240, 17%, 92.2%);
     --dark-secondary-color: #1f1f24;
 
-    --light-secondary-color-opaque: rgba(232, 232, 238, 0.875);
-    --dark-secondary-color-opaque: rgba(31, 31, 36, 0.8);
+    --light-secondary-color-opaque: hsla(240, 11%, 90%, 0.93);
+    --dark-secondary-color-opaque: rgba(31, 31, 36, 0.93);
 
     --light-text-color: #151518;
     --dark-text-color: #eee;

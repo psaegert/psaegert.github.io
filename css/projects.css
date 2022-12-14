@@ -65,13 +65,7 @@
     z-index: -1;
     background-color: #fff;
 
-    /* Darken the image. */
-    filter: brightness(0.9);
     transition: transform 0.1s ease-in-out;
-}
-
-.dark-reader .projects-selection-container .project-tile-container img.project-tile-image {
-    filter: brightness(0.3);
 }
 
 /* When hovering over the tile container, slightly zoom into the image. */
