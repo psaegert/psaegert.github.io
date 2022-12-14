@@ -32,7 +32,7 @@
 }
 
 .dark-reader .credentials .name .academic-title {
-    color: var(--dark-text-color-opaque);
+    color: var(--dark-text-color-opaque) !important;
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -56,7 +56,7 @@
 }
 
 .dark-reader #profile-hr {
-    color: var(--dark-text-color-opaque);
+    color: var(--dark-text-color-opaque) !important;
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -93,7 +93,7 @@
 
 
 .dark-reader .invertable-icon {
-    filter: invert(100%);
+    filter: invert(100%) !important;
 }
 
 @media screen and (prefers-color-scheme: dark) {

@@ -30,7 +30,7 @@
 
 
 .dark-reader .projects-selection-container {
-    box-shadow: var(--dark-box-shadow);
+    box-shadow: var(--dark-box-shadow) !important;
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -64,8 +64,8 @@
 }
 
 .dark-reader .project-tile {
-    background: var(--dark-secondary-color-opaque);
-    border: 1px solid var(--dark-color);
+    background: var(--dark-secondary-color-opaque) !important;
+    border: 1px solid var(--dark-color) !important;
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -128,7 +128,7 @@ img.project-tile-image {
 }
 
 .dark-reader .project-selection-date {
-    color: var(--dark-text-color-gray);
+    color: var(--dark-text-color-gray) !important;
 }
 
 @media screen and (prefers-color-scheme: dark) {
