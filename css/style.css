@@ -25,6 +25,16 @@
     }
 }
 
+[data-darkreader-mode="dynamic"] {
+    --primary-color: #151518;
+    --secondary-color: #1f1f24;
+    --secondary-color-opaque: rgba(31, 31, 36, 0.93);
+    --text-color: #eee;
+    --text-color-gray: #999;
+    --text-color-opaque:rgba(238, 238, 238, 0.3);
+    --box-shadow: 0px 0px 140px 10px rgba(156, 156, 252, 0.07);
+}
+
 * {
     margin: 0;
     padding: 0;
