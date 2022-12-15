@@ -26,7 +26,28 @@
     --dark-box-shadow: 0px 0px 140px 10px rgba(156, 156, 252, 0.07);
 
     --font-family: 'Montserrat';
+
+    --darkreader-bg--light-color: var(--light-color);
+    --darkreader-border--light-color: var(--light-color);
+    --darkreader-bg--dark-color: var(--dark-color);
+    --darkreader-border--dark-color: var(--dark-color);
+    --darkreader-bg--light-secondary-color-opaque: var(--light-secondary-color-opaque);
+    --darkreader-bg--dark-secondary-color-opaque: var(--dark-secondary-color-opaque);
+    --darkreader-text--light-text-color: var(--light-text-color);
+    --darkreader-text--dark-text-color: var(--dark-text-color);
+    --darkreader-text--light-text-color-gray: var(--light-text-color-gray);
+    --darkreader-text--dark-text-color-gray: var(--dark-text-color-gray);
+    --darkreader-text--light-text-color-opaque: var(--light-text-color-opaque);
+    --darkreader-text--dark-text-color-opaque: var(--dark-text-color-opaque);
+    --darkreader-bg--light-box-shadow: var(--light-box-shadow);
+    --darkreader-bg--dark-box-shadow: var(--dark-box-shadow);
+
+    --darkreader-neutral-background: var(--dark-color);
+    --darkreader-neutral-text: var(--dark-text-color);
+    --darkreader-selection-background: #004daa;
+    --darkreader-selection-text: #e8e6e3;
 }
+
 
 
 * {
