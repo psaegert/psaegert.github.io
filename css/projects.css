@@ -60,6 +60,10 @@
     }
 }
 
+[data-darkreader-mode="dynamic"] .project-tile {
+    box-shadow: none;
+}
+
 
 /* Project tile image */
 
