@@ -3,52 +3,27 @@
 
 :root {
     color-scheme: light dark;
-    
-    --light-color: #eee;
-    --dark-color: #151518;
-
-    --light-secondary-color: hsl(240, 17%, 92.2%);
-    --dark-secondary-color: #1f1f24;
-
-    --light-secondary-color-opaque: hsla(0, 0%, 93.3%, 0.96);
-    --dark-secondary-color-opaque: rgba(31, 31, 36, 0.93);
-
-    --light-text-color: #151518;
-    --dark-text-color: #eee;
-
-    --light-text-color-gray: #666;
-    --dark-text-color-gray: #999;
-
-    --light-text-color-opaque:rgba(21, 21, 24, 0.4);
-    --dark-text-color-opaque: rgba(238, 238, 238, 0.3);
-
-    --light-box-shadow: 0px 0px 140px 10px rgba(156, 156, 252, 0.15);
-    --dark-box-shadow: 0px 0px 140px 10px rgba(156, 156, 252, 0.07);
-
+    --primary-color: #eee;
+    --secondary-color: hsl(240, 17%, 92.2%);
+    --secondary-color-opaque: hsla(0, 0%, 93.3%, 0.96);
+    --text-color: #151518;
+    --text-color-gray: #666;
+    --text-color-opaque:rgba(21, 21, 24, 0.4);
+    --box-shadow: 0px 0px 140px 10px rgba(156, 156, 252, 0.15);
     --font-family: 'Montserrat';
-
-    --darkreader-bg--light-color: var(--light-color);
-    --darkreader-border--light-color: var(--light-color);
-    --darkreader-bg--dark-color: var(--dark-color);
-    --darkreader-border--dark-color: var(--dark-color);
-    --darkreader-bg--light-secondary-color-opaque: var(--light-secondary-color-opaque);
-    --darkreader-bg--dark-secondary-color-opaque: var(--dark-secondary-color-opaque);
-    --darkreader-text--light-text-color: var(--light-text-color);
-    --darkreader-text--dark-text-color: var(--dark-text-color);
-    --darkreader-text--light-text-color-gray: var(--light-text-color-gray);
-    --darkreader-text--dark-text-color-gray: var(--dark-text-color-gray);
-    --darkreader-text--light-text-color-opaque: var(--light-text-color-opaque);
-    --darkreader-text--dark-text-color-opaque: var(--dark-text-color-opaque);
-    --darkreader-bg--light-box-shadow: var(--light-box-shadow);
-    --darkreader-bg--dark-box-shadow: var(--dark-box-shadow);
-
-    --darkreader-neutral-background: var(--dark-color);
-    --darkreader-neutral-text: var(--dark-text-color);
-    --darkreader-selection-background: #004daa;
-    --darkreader-selection-text: #e8e6e3;
 }
 
-
+@media screen and (prefers-color-scheme: dark) { 
+    :root {
+        --primary-color: #151518;
+        --secondary-color: #1f1f24;
+        --secondary-color-opaque: rgba(31, 31, 36, 0.93);
+        --text-color: #eee;
+        --text-color-gray: #999;
+        --text-color-opaque:rgba(238, 238, 238, 0.3);
+        --box-shadow: 0px 0px 140px 10px rgba(156, 156, 252, 0.07);
+    }
+}
 
 * {
     margin: 0;
@@ -67,21 +42,8 @@ body {
     min-height: 100vh;
     position: absolute;
     z-index: 0;
-    color: var(--light-text-color);
-    background: var(--light-color);
-}
-
-
-body.dark-reader {
-    background: var(--dark-color);
-    color: var(--dark-text-color);
-}
-
-@media screen and (prefers-color-scheme: dark) { 
-    body {
-        background: var(--dark-color);
-        color: var(--dark-text-color);
-    }
+    color: var(--text-color);
+    background: var(--primary-color);
 }
 
 

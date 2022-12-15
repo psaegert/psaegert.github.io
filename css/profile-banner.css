@@ -26,19 +26,9 @@
 }
 
 .credentials .name .academic-title {
-    color: var(--light-text-color-opaque);
+    color: var(--text-color-opaque);
     font-size: 2.0rem;
     font-weight: 400;
-}
-
-.dark-reader .credentials .name .academic-title {
-    color: var(--dark-text-color-opaque);
-}
-
-@media screen and (prefers-color-scheme: dark) {
-    .credentials .name .academic-title {
-        color: var(--dark-text-color-opaque);
-    }
 }
 
 .credentials .username {
@@ -52,17 +42,7 @@
     margin: 0 auto;
     margin-top: 50px;
     width: 400px;
-    color: var(--light-text-color-opaque);
-}
-
-.dark-reader #profile-hr {
-    color: var(--dark-text-color-opaque);
-}
-
-@media screen and (prefers-color-scheme: dark) {
-    #profile-hr {
-        color: var(--dark-text-color-opaque);
-    }
+    color: var(--text-color-opaque);
 }
 
 #profile-hr::after {
@@ -89,17 +69,6 @@
 .social-icon {
     width: 25px;
     height: 25px;
-}
-
-
-.dark-reader .invertable-icon {
-    filter: invert(100%);
-}
-
-@media screen and (prefers-color-scheme: dark) {
-    .invertable-icon {
-        filter: invert(100%);
-    }
 }
 
 
