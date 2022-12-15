@@ -50,7 +50,7 @@
     border: 1px solid var(--primary-color);
     position: relative;
     overflow: hidden;
-    box-shadow: 0px 0px 24px 0px rgba(156, 156, 252, 0.25);
+    box-shadow: 0px 0px 24px 0px rgba(156, 156, 252, 0.22);
 }
 
 
@@ -80,16 +80,28 @@ img.project-tile-image {
     z-index: -1;
     background-color: #fff;
 
-    transition: transform 0.1s ease-in-out;
+}
+
+.zoom-on-hover {
+    transition: transform 0.1s ease-in-out !important;
 }
 
 /* When hovering over the tile container, slightly zoom into the image. */
-.project-tile-container:hover img.project-tile-image {
-    transform: scale(1.07);
+.project-tile-container:hover img.project-tile-image.zoom-on-hover {
+    transform: scale(1.07) !important;
+}
+
+/* Use :active for touch devices. */
+.project-tile-container:active img.project-tile-image.zoom-on-hover {
+    transform: scale(1.07) !important;
 }
 
 /* When hovering over the tile container, underline the header. */
 .project-tile-container:hover .project-selection-tile-header {
+    text-decoration: underline;
+}
+
+.project-tile-container:active .project-selection-tile-header {
     text-decoration: underline;
 }
 
