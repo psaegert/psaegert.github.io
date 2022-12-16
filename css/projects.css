@@ -92,10 +92,25 @@ img.project-tile-image {
     transform: scale(1.07) !important;
 }
 
-/* When hovering over the tile container, underline the header. */
-.project-tile-container:hover .project-selection-tile-header {
+/* On touch devices, do not zoom into the image. */
+@media screen and (hover: none) {
+    img.project-tile-image.zoom-on-hover {
+        transform: none !important;
+    }
+}
+
+/* When hovering over the tile container, underline the title. */
+.project-tile-container:hover .project-selection-title{
     text-decoration: underline;
 }
+
+/* On touch devices, underline the title by default. */
+@media screen and (hover: none) {
+    .project-tile-container .project-selection-title{
+        text-decoration: underline;
+    }
+}
+
 
 /* Project header */
 
@@ -112,6 +127,7 @@ img.project-tile-image {
     -webkit-box-orient: vertical;
     font-size: 1.3rem;
 }
+
 
 .project-selection-date {
     display: inline-block;
