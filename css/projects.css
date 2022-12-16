@@ -86,13 +86,9 @@ img.project-tile-image {
     transition: transform 0.1s ease-in-out !important;
 }
 
+
 /* When hovering over the tile container, slightly zoom into the image. */
 .project-tile-container:hover img.project-tile-image.zoom-on-hover {
-    transform: scale(1.07) !important;
-}
-
-/* Use :active for touch devices. */
-.project-tile-container:active img.project-tile-image.zoom-on-hover {
     transform: scale(1.07) !important;
 }
 
@@ -100,11 +96,6 @@ img.project-tile-image {
 .project-tile-container:hover .project-selection-tile-header {
     text-decoration: underline;
 }
-
-.project-tile-container:active .project-selection-tile-header {
-    text-decoration: underline;
-}
-
 
 /* Project header */
 
