@@ -4,8 +4,9 @@
 :root {
     color-scheme: light dark;
     --primary-color: #eee;
+    --primary-color-shadow-infused: #e4e4ee;
     --secondary-color: hsl(240, 17%, 92.2%);
-    --secondary-color-opaque: hsla(0, 0%, 93.3%, 0.96);
+    --secondary-color-opaque: hsla(0, 0%, 93.3%, 0.95);
     --text-color: #151518;
     --text-color-gray: #666;
     --text-color-opaque:rgba(21, 21, 24, 0.4);
@@ -16,6 +17,7 @@
 @media screen and (prefers-color-scheme: dark) { 
     :root {
         --primary-color: #151518;
+        --primary-color-shadow-infused: #151518;
         --secondary-color: #1f1f24;
         --secondary-color-opaque: rgba(31, 31, 36, 0.93);
         --text-color: #eee;
@@ -27,6 +29,7 @@
 
 [data-darkreader-mode="dynamic"] {
     --primary-color: #151518;
+    --primary-color-shadow-infused: #151518;
     --secondary-color: #1f1f24;
     --secondary-color-opaque: rgba(31, 31, 36, 0.93);
     --text-color: #eee;
