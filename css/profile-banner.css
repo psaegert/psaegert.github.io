@@ -120,7 +120,10 @@
     #profile-hr {
         width: 300px;
     }
-                
+}
+
+/* On touch devices, increase the icon size to 32px regardless of the size of the screen. */
+@media screen and (hover: none) {
     .social-icon {
         width: 32px;
         height: 32px;
