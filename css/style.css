@@ -67,7 +67,13 @@ a {
     color: inherit;
 }
 
-/* Invertible icons */
-.invertible-icon {
-    filter: invert(0.9);
+/* Invertible icons for dark mode */
+@media screen and (prefers-color-scheme: dark) {
+    .invertible-icon {
+        filter: invert(0.95);
+    }
+}
+
+[data-darkreader-mode="dynamic"] .invertible-icon {
+    filter: invert(0.95);
 }
