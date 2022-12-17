@@ -5,6 +5,13 @@
     margin-top: 8vh;
 }
 
+/* Decrease the top margin on small screens. */
+@media screen and (max-width: 808px) {
+    .profile-banner {
+        margin-top: 5vh;
+    }
+}
+
 .profile-picture-big {
     width: 200px;
     height: 200px;
@@ -62,6 +69,13 @@
     justify-content: center;
 }
 
+/* Decrease the top margin on small screens. */
+@media screen and (max-width: 808px) {
+    .social {
+        margin-top: 30px;
+    }
+}
+
 .social a {
     margin: 0 17px;
 }
@@ -69,6 +83,7 @@
 .social-icon {
     width: 25px;
     height: 25px;
+    overflow: visible;
 }
 
 
@@ -85,7 +100,7 @@
     .profile-banner .credentials {
         display: block;
         padding-left: 0;
-        margin-top: 10px;
+        margin-top: 18px;
     }
     
     .credentials .name {

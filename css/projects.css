@@ -28,6 +28,13 @@
     box-shadow: var(--box-shadow);
 }
 
+/* Decrease the top margin on small screens. */
+@media screen and (max-width: 808px) {
+    .projects-selection-container {
+        margin-top: 30px;
+    }
+}
+
 
 /* Project tile container */
 
