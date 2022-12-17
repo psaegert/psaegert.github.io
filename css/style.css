@@ -67,7 +67,7 @@ a {
     color: inherit;
 }
 
-/* Invertable icons */
-.invertable-icon {
+/* Invertible icons */
+.invertible-icon {
     filter: invert(0.9);
 }
