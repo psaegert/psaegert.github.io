@@ -1,15 +1,3 @@
-.projects-selection {
-    max-width: 1576px;
-    margin: 7vh auto 5vh auto;
-}
-
-.projects-selection-title {
-    font-family: monospace;
-    font-size: 2rem;
-    padding-left: 20px;
-}
-
-
 /* Selection container */
 
 .projects-selection-container {

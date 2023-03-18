@@ -77,3 +77,51 @@ a {
 [data-darkreader-mode="dynamic"] .invertible-icon {
     filter: invert(0.95);
 }
+
+
+.content {
+    max-width: 1576px;
+    margin: 7vh auto 120px auto;
+}
+
+.section-title {
+    font-family: monospace;
+    font-size: 2rem;
+    padding-left: 20px;
+}
+
+.back-arrow {
+    font-family: monospace;
+    font-size: 2.5rem;
+    padding-left: 20px;
+    height: 0;
+    transform: translateY(-55px);
+    display: block;
+}
+
+/* Stick footers to the bottom of the page */
+footer {
+    bottom: 0;
+    width: 100%;
+    /* margin-bottom: 100px; */
+    position: absolute;
+    transform: translateX(-10vw);
+    height: 60px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: underline;
+}
+

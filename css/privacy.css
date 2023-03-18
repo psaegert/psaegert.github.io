@@ -1,0 +1,29 @@
+#privacy-wrapper {
+    margin: 50px 0 0 0;
+    padding: 13px;
+    width: 100%;
+    height: 100%;
+    border-radius: 48px;
+    box-shadow: var(--box-shadow);
+}
+
+.privacy-container {
+    margin: 50px 0 0 0;
+    padding: 33px;
+    width: 100%;
+    height: 100%;
+    border-radius: 48px;
+    box-shadow: var(--box-shadow);
+    line-height: 1.7;
+}
+
+/* Decrease the top margin on small screens. */
+@media screen and (max-width: 808px) {
+    .privacy-container {
+        margin-top: 30px;
+    }
+}
+
+.privacy-container a {
+    text-decoration: underline;
+}
