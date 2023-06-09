@@ -94,16 +94,18 @@ img.project-tile-image {
 }
 
 
-/* When hovering over the tile container, slightly zoom into the image. */
-.project-tile:hover img.project-tile-image.zoom-on-hover {
+/* On touch devices, do not zoom into the image. */
+.non-touch-device img.project-tile-image.zoom-on-hover {
     transform: scale(1.07);
 }
 
-/* On touch devices, do not zoom into the image. */
-@media screen and (hover: none) {
-    img.project-tile-image.zoom-on-hover {
-        transform: none;
-    }
+.touch-device img.project-tile-image.zoom-on-hover {
+    transform: none;
+}
+
+/* When hovering over the tile container, slightly zoom into the image. */
+.project-tile:hover img.project-tile-image.zoom-on-hover {
+    transform: scale(1.07);
 }
 
 
@@ -125,16 +127,19 @@ img.project-tile-image {
     text-decoration: none;
 }
 
-/* When hovering over the tile container, underline the title. */
-.project-tile:hover .project-selection-title{
+
+/* On touch devices, underline the title by default. */
+.non-touch-device .project-selection-title {
+    text-decoration: none;
+}
+
+.touch-device .project-selection-title {
     text-decoration: underline;
 }
 
-/* On touch devices, underline the title by default. */
-@media screen and (hover: none) {
-    .project-selection-title{
-        text-decoration: underline;
-    }
+/* When hovering over the tile container, underline the title. */
+.project-tile:hover .project-selection-title{
+    text-decoration: underline;
 }
 
 
