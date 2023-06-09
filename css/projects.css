@@ -96,7 +96,7 @@ img.project-tile-image {
 
 /* On touch devices, do not zoom into the image. */
 .non-touch-device img.project-tile-image.zoom-on-hover {
-    transform: scale(1.07);
+    transform: scale(1);
 }
 
 .touch-device img.project-tile-image.zoom-on-hover {
