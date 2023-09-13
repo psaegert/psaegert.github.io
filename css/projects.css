@@ -152,3 +152,34 @@ img.project-tile-image {
     margin-top: 15px;
     line-height: 1.4;
 }
+
+
+/* Stats */
+
+.stats {
+    color: var(--text-color-gray);
+    position: absolute;
+    bottom: 17px;
+    right: 25px;
+}
+
+.dot {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.octicon-star-fill {
+    fill: rgb(234, 197, 79);
+    vertical-align: text-top;
+    /* margin-right: 1px; */
+    padding-top: 2px;
+    padding-bottom: 1px;
+}
+
+.octicon-repo-forked {
+    vertical-align: text-top;
+    /* margin-right: 1px; */
+    padding-top: 2px;
+    padding-bottom: 1px;
+    fill: var(--text-color-gray);
+}
