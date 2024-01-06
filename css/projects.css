@@ -23,9 +23,9 @@
     }
 }
 
-.projects-selection-container a {
+/* .projects-selection-container a {
     cursor: default;
-}
+} */
 
 
 /* Project tile container */
@@ -152,6 +152,10 @@ img.project-tile-image.zoom-on-hover {
 .project-selection-description {
     margin-top: 15px;
     line-height: 1.4;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Adjust the number of lines based on your design */
+    -webkit-box-orient: vertical;
 }
 
 

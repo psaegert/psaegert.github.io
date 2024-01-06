@@ -90,6 +90,12 @@ a {
     padding-left: 20px;
 }
 
+/* Add top margin to every but the first section title */
+
+.section-title:not(:first-child) {
+    margin-top: 100px;
+}
+
 .back-arrow {
     font-family: monospace;
     font-size: 2.5rem;
