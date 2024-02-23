@@ -90,8 +90,7 @@ def update_html(html_path):
                 stats_div.append(new_stars_span)
 
     # Write the updated HTML back to the file
-    new_html_path = html_path.replace('.html', '-new.html')
-    with open(new_html_path, 'w', encoding='utf-8') as file:
+    with open(html_path, 'w', encoding='utf-8') as file:
         file.write(soup.prettify(formatter="html5"))
 
 
