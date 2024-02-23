@@ -25,7 +25,7 @@ jobs:
     - name: Update stars and forks count
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: python update-stats.py
+      run: python scripts/update-stats.py
 
     - name: Check if index.html has changed
       id: check_changes
