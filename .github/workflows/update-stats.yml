@@ -1,12 +1,12 @@
 name: Update GitHub Stats
 
 on:
-  schedule:
+ schedule:
     - cron: '0 0 * * 1' # Runs every Monday at 00:00
-  workflow_dispatch:
+ workflow_dispatch:
 
 jobs:
-  update-stats:
+ update-stats:
     runs-on: ubuntu-latest
 
     steps:
@@ -39,7 +39,7 @@ jobs:
         fi
 
     - name: Commit and push if index.html changed
-      if: steps.check_changes.outputs.changed == 'true'
+      if: env.changed == 'true'
       run: |
         git config --global user.email "paulsaegert@protonmail.com"
         git config --global user.name "GitHub Actions"
