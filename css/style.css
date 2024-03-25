@@ -67,6 +67,12 @@ a {
     color: inherit;
 }
 
+/* Keep .citation links normal */
+
+a.citation {
+    color: #007bff;
+}
+
 /* Invertible icons for dark mode */
 @media screen and (prefers-color-scheme: dark) {
     .invertible-icon {
