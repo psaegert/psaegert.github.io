@@ -61,7 +61,7 @@ def update_html(html_path):
 
             new_stars_span = BeautifulSoup(STARS_SPAN_TEMPLATE.replace('{{stars}}', str(stars)), 'html.parser')
             new_forks_span = BeautifulSoup(FORKS_SPAN_TEMPLATE.replace('{{forks}}', str(forks)), 'html.parser')
-            new_delimiter = BeautifulSoup(DELIMITER, 'html.parser')
+            # new_delimiter = BeautifulSoup(DELIMITER, 'html.parser')
 
             # Remove the existing "stars" and "forks" spans
 
@@ -77,13 +77,15 @@ def update_html(html_path):
 
             # If there is already another span in the stats div, add a delimiter
             if (stars or forks) and stats_div.find('span'):
-                stats_div.append(new_delimiter)
+                print('Adding delimiter')
+                stats_div.append(BeautifulSoup(DELIMITER, 'html.parser'))
 
             # Add the new stars and forks spans
             if forks:
                 stats_div.append(new_forks_span)
                 if stars:
-                    stats_div.append(new_delimiter)
+                    print('Adding delimiter')
+                    stats_div.append(BeautifulSoup(DELIMITER, 'html.parser'))
 
             # Add the new stars span
             if stars:
