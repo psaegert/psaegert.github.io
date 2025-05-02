@@ -98,38 +98,57 @@
    <h2 class="section-title">
     /publications
    </h2>
-   <div class="projects-selection-container">
+   <div class="projects-selection-container publications">
     <div class="project-tile-container">
-     <a href="https://github.com/psaegert/sindy-autoencoders-thesis" target="_blank">
+     <a href="https://github.com/psaegert/flash-ansr-thesis" target="_blank">
       <div class="project-tile">
        <!-- <img src="https://raw.githubusercontent.com/psaegert/nli-nec/main/images/visual_abstract.png" alt="" class="project-tile-image"> -->
-       <img alt class="project-tile-image zoom-on-hover" src="assets/sindy_visual_abstract.png">
+       <img alt class="project-tile-image zoom-on-hover" src="assets/nsr.png">
        <div class="project-selection-tile-header">
         <h3 class="project-selection-title">
-         On Data-Driven Discovery Of Symbolic Differential Equations From Unsuitable Coordinates Using SINDy-Autoencoders
+        ⚡ANSR: Fast Amortized Neural Symbolic Regression
         </h3>
         <span class="project-selection-date">
-         2022
+         2025
         </span>
        </div>
        <p class="project-selection-description">
-        "Machine Learning Methods have evolved to a powerful tool in many fields of science, including physics. While methods have become fast and sophisticated enough to learn a wide variety of tasks, they often come at the cost of interpretability. This problem can be partially overcome by making use of symbolic regression as shown in
-        <a class="citation" href="https://www.pnas.org/doi/full/10.1073/pnas.1517384113">
-         [1]
-        </a>
-        and
-        <a " class="citation" href="https://proceedings.neurips.cc/paper/2020/file/c9f2f917078bd2db12f23c3b413d9cba-Paper.pdf">
-         [2]
-        </a>
-        , but it requires data in suitable coordinates. In my work, I assess and improve the SINDY-Autoencoder proposed by K. Champion et al.
-        <a class="citation" href="https://arxiv.org/abs/1904.02107">
-         [3]
-        </a>
-        , which is designed to learn not only symbolic equations of motion from high-dimensional data, but also the coordinates in which the equations would be most conveniently formulated. I conduct a verification and replication of the proposed method before creating and evaluating variants which eventually lead to better and more reliable results."
+        "Symbolic Regression has been approached with many different methods and paradigms. The overwhelming success of transformer-based language models in recent years has since motivated researchers to solve Symbolic Regression with large-scale pre-training of data-conditioned "equation generators" at competitive levels. However, as most traditional methods, the majority of these Amortized Neural Symbolic Regression methods rely on SymPy to simplify and compile randomly generated training equations, a choice that inevitably brings tradeoffs and requires workarounds to efficiently work at scale. I show that replacing SymPy with a novel token-based simplification algorithm with hand-crafted transformation rules enables training on fully-procedurally generated and higher-quality synthetic data, and thus develop ⚡ANSR. On various test sets, my method perfectly recovers +80% more equations numerically than the NeSymReS baseline while being 84 times faster natively, and yields comparable recovery rates to PySR in a quarter of its time. I provide an in-depth performance analysis of my method on stricter and more meaningful metrics than previous work. ⚡ANSR is open-source and available on GitHub and Huggingface, and allows for straight-forward replicability on consumer-grade hardware.
        </p>
       </div>
      </a>
     </div>
+    <div class="project-tile-container">
+        <a href="https://github.com/psaegert/sindy-autoencoders-thesis" target="_blank">
+         <div class="project-tile">
+          <!-- <img src="https://raw.githubusercontent.com/psaegert/nli-nec/main/images/visual_abstract.png" alt="" class="project-tile-image"> -->
+          <img alt class="project-tile-image zoom-on-hover" src="assets/sindy_visual_abstract.png">
+          <div class="project-selection-tile-header">
+           <h3 class="project-selection-title">
+            On Data-Driven Discovery Of Symbolic Differential Equations From Unsuitable Coordinates Using SINDy-Autoencoders
+           </h3>
+           <span class="project-selection-date">
+            2022
+           </span>
+          </div>
+          <p class="project-selection-description">
+           "Machine Learning Methods have evolved to a powerful tool in many fields of science, including physics. While methods have become fast and sophisticated enough to learn a wide variety of tasks, they often come at the cost of interpretability. This problem can be partially overcome by making use of symbolic regression as shown in
+           <a class="citation" href="https://www.pnas.org/doi/full/10.1073/pnas.1517384113">
+            [1]
+           </a>
+           and
+           <a " class="citation" href="https://proceedings.neurips.cc/paper/2020/file/c9f2f917078bd2db12f23c3b413d9cba-Paper.pdf">
+            [2]
+           </a>
+           , but it requires data in suitable coordinates. In my work, I assess and improve the SINDY-Autoencoder proposed by K. Champion et al.
+           <a class="citation" href="https://arxiv.org/abs/1904.02107">
+            [3]
+           </a>
+           , which is designed to learn not only symbolic equations of motion from high-dimensional data, but also the coordinates in which the equations would be most conveniently formulated. I conduct a verification and replication of the proposed method before creating and evaluating variants which eventually lead to better and more reliable results."
+          </p>
+         </div>
+        </a>
+       </div>
    </div>
    <h2 class="section-title">
     /projects
