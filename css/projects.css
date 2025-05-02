@@ -51,6 +51,12 @@
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .publications .project-tile-container {
+        min-width: 100%;
+    }
+}
+
 
 /* Project tile */
 
