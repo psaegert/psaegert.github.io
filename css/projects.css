@@ -159,6 +159,17 @@ img.project-tile-image.zoom-on-hover {
     margin-top: 5px;
 }
 
+.project-selection-venue {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 1px 8px;
+    font-size: 0.8rem;
+    color: var(--text-color-gray);
+    border: 1px solid var(--text-color-gray);
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
 
 /* Project description */
 
